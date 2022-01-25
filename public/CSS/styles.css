@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+	padding: 0;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+
+.main-header{
+    background-color: #fff159;
+    width: 100%;
+    height: 105px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    .main-header{
+        background-color: red;
+    }
+}
+
+.main-header-top-bar{
+    padding: 2%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-end;
+    box-sizing:border-box;
+}
+
+@media (min-width: 460px) {
+    
+}
+
+#logo-header {
+    position: absolute;
+	padding: 2px 2px 2px 2px;
+	text-decoration: underline;
+    width: 120px;
+    height: 60px;
+    top: 0px;
+    left: 20px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#nav-search-input{
+    position: relative;
+    box-sizing: border-box;
+    left: 50%;  
+    top:2%;
+    transform: translate(-50%,-50%);
+    padding: 2px;
+}
+
+#nav-search-input input{
+    width: 240px;
+    height: 40px;
+    padding: 0 2rem;
+    font-size: 16px;
+    color:#000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+
+#button{
+    position: absolute;
+    background: white;
+    line-height: 10rem;
+    text-align: center;
+    color: #666;
+    width: 10%;
+    border-radius: 50%;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+.copy-header{
+    color: darkslategray;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044aad5;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.main-navbar{
+    padding: 5px;
+    display:flex;
+    justify-content: space-around;
+    box-sizing:border-box;
+}
+
+.main-navbar ul li{
+    list-style-type: none;
+}
+
+.main-navbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    background:#fcde49ea;
+    color: red;
+    font-size: 14px;
+    height: 35px;
+    padding: .5px px 25px .5px 25px;  
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 38px;
+}
+
+.nav-enlace:hover{
+    background:rgba(196, 193, 193, 0.5);
+}
+.nav-enlace{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.info-slide p {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 4px 0 10px;
+}
+
+.titulos-footer{
+    display: block;
+    font-size: 1.25em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    color: #4b4b4b;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+
+#contenedor{
+    background: #999;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+*/
+
+.banner {
+	width: 100%;
+    margin: auto;
+	position: relative;
+	height: 180px; 
+	border-radius: 2px;
+	background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
+}
+.banner img{
+    width: 100%;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto; 
+}
+
+.card{
+    height: 360px;
+    width:220px;
+    box-shadow: 0 1px 3px rgb(77, 74, 74);
+    margin: 10px 2px;
+    display: inline-block;
+    background-color: rgb(226, 218, 207, 0.5);
+  }
+
+   .card img{
+       margin: 10px 0px;
+       width: 100%;
+       background: white;
+     } 
+
+     .informacion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+     
+     .informacion h3{
+       font-size: 1.4rem;
+       text-align:center;
+       color:#333;
+       margin: 10px 0px;
+     }
+
+     .informacion i{
+        color: #39b54a;
+     }
+
+    .informacion i{
+        display:block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+    }
+
+    .informacion i:hover{
+        transform: rotate(-90deg);
+    }
+     
+     .descuento{
+        font-family: roboto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        height:20px;
+        margin: 10px 0;
+     }
+
+     .box-price{
+       height:20px;
+       width: 98%;
+       margin: 10px 0;
+       font-family: sans-serif;
+       display: flex;
+       justify-content: space-between;
+       align-items:center;
+     }
+     
+     .price1{
+       color: red;
+       font-size: .8rem;
+       margin: 2px;
+       text-align: center;
+     }
+     
+     .price2{
+       font-size: 1rem;
+       margin: 2px;
+       text-align: center;
+     }
+
+     .compra{
+       font-size: 1.2rem;
+       margin: 2px;
+       text-align: center;
+     }
+    
+     
+#payment-data-icon{
+    float: left;
+    height: 50px;
+    margin-right: 16px;
+    width: 48px;
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#izq{
+    float: left;
+    text-align: center;
+    background: rgb(252, 248, 248);
+    padding: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#cent{
+    float: left;
+    text-align: center;
+    background: rgb(252, 248, 248);
+    padding: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#der{
+    float: left;
+    text-align: center;
+    background: rgb(252, 248, 248);
+    padding: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+
+
+/*.site-info{
+    height: 240px;
+    width: 480;
+    padding: 5px 0 0;
+}
+
+#final{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    height: 10px;
+    padding: 1px 30px 0 28px;
+    text-decoration: none;
+    margin-top:3%;
+}
+
+.carousel-container{
+    style="width:1200px;min-width:1200px"}
+*/
+
+
+@media (min-width: 480px){
+    .informacion h3{
+        display: none;
+    }
+
+    .informacion h3:hover{
+        display: block;
+    }
+
+    .informacion{
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #contenedor{
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+    .informacion h3{
+        width: 22%;
+    }
+}
+
+
+
