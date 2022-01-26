@@ -30,11 +30,11 @@ body{
 }
 
 .main-header-top-bar{
-    padding: 2%;
+    padding: .5%;
     display:flex;
+    position: absolute;
     flex-wrap: wrap;
     align-items:center;
-    justify-content: flex-end;
     box-sizing:border-box;
 }
 
@@ -58,17 +58,22 @@ body{
 
 #nav-search-input{
     position: relative;
-    box-sizing: border-box;
-    left: 50%;  
-    top:2%;
-    transform: translate(-50%,-50%);
-    padding: 2px;
+    box-sizing: border-box; 
+    transform: translate(15%,-50%);
+    padding: 5px 0;
+    overflow: inherit;
+    display: inherit;
+    height: 50px;
+    left: 45px;
+    right: 94px;
+    z-index: 910;
+    will-change: left;
 }
 
 #nav-search-input input{
-    width: 240px;
+    width: 300px;
     height: 40px;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     font-size: 16px;
     color:#000;
     outline: none;
@@ -77,13 +82,11 @@ body{
 }
 
 #button{
-    position: absolute;
     background: white;
-    line-height: 10rem;
+    line-height: 40px;
     text-align: center;
     color: #666;
-    width: 10%;
-    border-radius: 50%;
+    width: 40px;
     border: 1px solid silver;
     cursor: pointer;
 }
@@ -94,6 +97,7 @@ body{
     margin-top: 10px;
     font-size: 12px;
     cursor: pointer;
+    display: none;
     
 }
 
@@ -105,45 +109,13 @@ div.burger-menu i{
     background-color: #0044aad5;
     border-radius: 5px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 16px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
+    margin: 5px 0px 10px 0px;
     padding: 10px;
     width: 40px;
 }
 
-.main-navbar{
-    padding: 5px;
-    display:flex;
-    justify-content: space-around;
-    box-sizing:border-box;
-}
-
-.main-navbar ul li{
-    list-style-type: none;
-}
-
-.main-navbar ul li a{
-    text-decoration: none;
-    display: inline-block;
-    background:#fcde49ea;
-    color: red;
-    font-size: 14px;
-    height: 35px;
-    padding: .5px px 25px .5px 25px;  
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    line-height: 38px;
-}
-
-.nav-enlace:hover{
-    background:rgba(196, 193, 193, 0.5);
-}
-.nav-enlace{
-    margin-left: 10px;
-    margin-right: 10px;
-}
 .info-slide p {
     color: #999;
     font-size: 18px;
@@ -170,8 +142,6 @@ div.burger-menu i{
     display: none;
     overflow: hidden;
 }
-
-*/
 
 .banner {
 	width: 100%;
@@ -284,6 +254,7 @@ div.burger-menu i{
     width: 48px;
     color: -webkit-link;
     cursor: pointer;
+    position: relative;
     text-decoration: underline;
 }
 
@@ -338,6 +309,17 @@ div.burger-menu i{
 
 
 @media (min-width: 480px){
+
+    .burger-menu-desp{
+        display: none;
+    }
+
+    #nav-search-input{
+        position: relative;
+        transform: translate(30%,-150%);
+        width: 360px;
+    }
+
     .informacion h3{
         display: none;
     }
@@ -365,6 +347,62 @@ div.burger-menu i{
 @media (min-width: 769px){
     .informacion h3{
         width: 22%;
+    }
+
+    #nav-search-input{
+        position: relative;
+        transform: translate(40%,-160%);
+        width: 360px;
+    }
+
+    
+    .main-navbar{
+        padding: 5px;
+        box-sizing:border-box;
+        max-width: 785px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .main-navbar ul li{
+        list-style-type: none;
+    }
+    
+    .main-navbar ul li a{
+        text-decoration: none;
+        display: inline-block;
+        background:#fcde49ea;
+        color: red;
+        font-size: 14px;
+        height: 35px;
+        padding: .5px px 25px .5px 25px;  
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        line-height: 38px;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-menu2{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-item{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-item:hover{
+        background:rgba(196, 193, 193, 0.5);
+    }
+
+    .main-navbar ul i{
+        padding: 0 10px;
     }
 }
 

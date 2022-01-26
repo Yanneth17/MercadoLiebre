@@ -17,10 +17,10 @@
         <div id="logo-header">
             <img src="img/logo-mercado-liebre.svg" alt="MercadoLiebre"></img>
         </div>
-        <div class="form" action="#" method="GET" id="nav-search-input">
+        <form class="nav-search" action="#" method="GET" id="nav-search-input">
             <input type="text" placeholder="Busca productos, marcas, otros..." required> </input>
             <div id="button" class="submit"><i class="fas fa-search"></i>
-        </div>
+            </form>
         <P class="copy-header">
             <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
         </P>
@@ -28,20 +28,29 @@
 
     <nav class="main-navbar">
         <ul class="nav-menu">
-            <li class="nav-item"><a href= "#" class="nav-enlace">Ofertas</a></li>
-            <li class="nav-item"><a href= "#" class="nav-enlace">Tiendas Oficiales</a></li>
-            <li class="nav-item"><a href= "#" class="nav-enlace">Vender</a></li>
-            <li class="nav-item"><a href= "#" class="nav-enlace">Ayuda</a></li>
+            <li class="nav-item"><a href= "#">Ofertas</a></li>
+            <li class="nav-item"><a href= "#">Tiendas Oficiales</a></li>
+            <li class="nav-item"><a href= "#">Vender</a></li>
+            <li class="nav-item"><a href= "#">Ayuda</a></li>
         </ul>
         <ul class="nav-menu2">
-            <li class="nav-item"><a href= "/register" class="nav-enlace1">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
-            <li class="nav-item"><a href= "/login" class="nav-enlace1">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-            <li class="nav-item"><a href= "#" class="nav-enlace1">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            <li class="nav-item"><a href= "/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li class="nav-item"><a href= "/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+            <li class="nav-item"><a href= "#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
         <ul> <i class="fas fa-shopping-cart"></i> </ul>
     </nav>
     <div class="burger-menu">
-        <i class="fa fa-bars burger"></i>
+        <a href=".burger-menu-desp"><i class="fa fa-bars burger"></i></a>
+    </div>
+
+    <div class="burger-menu-desp">
+    <ul>
+        <li class="nav-mobile-menu-selected"><a href="#"><i class="nav-icon-home"></i><span>Inicio</span></a></li>
+        <li class="nav-mobile-menu-selected"><a href="#"><i class="nav-icon-deals-mobile"></i><span>Ofertas</span></a></li>
+        <li class="nav-mobile-menu-selected"><a href="#"><i class="nav-icon-history-mobile"></i><span>Historial</span></a></li>
+        <li class="nav-mobile-menu-selected"><a href="#"><i class="nav-icon-help-mobile"></i><span>Ayuda</span></a></li>
+    </ul>
     </div>
 </header>
 
