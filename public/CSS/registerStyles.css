@@ -1,3 +1,33 @@
+#logo-header {
+    position: absolute;
+	padding: 2px 2px 2px 2px;
+    width: 120px;
+    height: 60px;
+    left: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    top:15px;
+}
+
+.header{
+    background-color: #fff159;
+    width: 100%;
+    height: 105px;
+    text-align: center;
+}
+
 .register{
     background-color: blue;
+    width: 50%;
+    position: absolute;
+    margin: 0 20%;
+    border: solid 3px silver;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header{
+    background-color:#ededed;
 }
