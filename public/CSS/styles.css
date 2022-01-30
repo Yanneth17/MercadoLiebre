@@ -14,18 +14,19 @@ body {
     line-height: 1rem;
 }
 
+#menu_mobile {
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .main-header {
     background-color: #fff159;
     width: 100%;
-    height: 200px;
+    height: 600px;
     padding: 0px 5px 0px 5px;
     text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-    .main-header {
-        background-color: red;
-    }
 }
 
 .main-header-top-bar {
@@ -37,16 +38,18 @@ body {
     box-sizing: border-box;
 }
 
-@media (min-width: 460px) {}
+.main-navbar {
+    display: none;
+}
 
 #logo-header {
     position: absolute;
-    padding: 2px 2px 2px 2px;
+    padding: 1px 1px 1px 1px;
     text-decoration: underline;
     width: 120px;
     height: 60px;
-    top: 0px;
-    left: 20px;
+    top: 10px;
+    left: 5px;
     display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
@@ -56,7 +59,7 @@ body {
 #nav-search-input {
     position: relative;
     box-sizing: border-box;
-    transform: translate(20%, 15%);
+    transform: translate(0%, 100%);
     padding: 5px 0;
     overflow: inherit;
     display: inherit;
@@ -95,21 +98,6 @@ body {
     font-size: 12px;
     cursor: pointer;
     display: none;
-}
-
-div.burger-menu {
-    text-align: center;
-}
-
-div.burger-menu i {
-    background-color: #0044aad5;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 16px;
-    height: 40px;
-    margin: 5px 0px 10px 0px;
-    padding: 10px;
-    width: 40px;
 }
 
 .info-slide p {
@@ -285,23 +273,23 @@ div.burger-menu i {
 
 
 /*.site-info{
-    height: 240px;
-    width: 480;
-    padding: 5px 0 0;
+height: 240px;
+width: 480;
+padding: 5px 0 0;
 }
 
 #final{
-    display: inline-block;
-    position: relative;
-    margin: 10px;
-    height: 10px;
-    padding: 1px 30px 0 28px;
-    text-decoration: none;
-    margin-top:3%;
+display: inline-block;
+position: relative;
+margin: 10px;
+height: 10px;
+padding: 1px 30px 0 28px;
+text-decoration: none;
+margin-top:3%;
 }
 
 .carousel-container{
-    style="width:1200px;min-width:1200px"}
+style="width:1200px;min-width:1200px"}
 */
 
 .carousel-container {
@@ -314,12 +302,9 @@ div.burger-menu i {
 }
 
 @media (min-width: 480px) {
-    .burger-menu-desp {
-        display: none;
-    }
     #nav-search-input {
         position: relative;
-        transform: translate(30%, -170%);
+        transform: translate(30%, 100%);
         width: 360px;
     }
     .informacion h3 {
@@ -347,53 +332,66 @@ div.burger-menu i {
 }
 
 @media (min-width: 769px) {
-    .informacion h3 {
-        width: 22%;
+    #menu_mobile {
+        display: none;
     }
+}
+
+@media (min-width: 584px) {
     #nav-search-input {
-        position: relative;
-        transform: translate(80%, 10%);
-        width: 360px;
+        transform: translate(30%, 0%);
     }
-    .main-navbar {
-        padding: 5px;
-        box-sizing: border-box;
-        max-width: 785px;
-        display: flex;
-        justify-content: space-around;
+    @media (min-width: 769px) {
+        .main-navbar {
+            padding: 5px;
+            box-sizing: border-box;
+            max-width: 785px;
+            display: flex;
+            justify-content: space-around;
+        }
     }
-    .main-navbar ul li {
-        list-style-type: none;
-    }
-    .main-navbar ul li a {
-        text-decoration: none;
-        display: inline-block;
-        background: #fcde49ea;
-        color: red;
-        font-size: 14px;
-        height: 35px;
-        padding: .5px px 25px .5px 25px;
-        position: relative;
-        box-sizing: border-box;
-        overflow: hidden;
-        line-height: 38px;
-    }
-    .nav-menu {
-        display: flex;
-        justify-content: space-around;
-    }
-    .nav-menu2 {
-        display: flex;
-        justify-content: space-around;
-    }
-    .nav-item {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .nav-item:hover {
-        background: rgba(196, 193, 193, 0.5);
-    }
-    .main-navbar ul i {
-        padding: 0 10px;
+    @media (min-width: 769px) {
+        .informacion h3 {
+            width: 22%;
+        }
+        #nav-search-input {
+            position: relative;
+            transform: translate(80%, 10%);
+            width: 360px;
+        }
+        .main-navbar ul li {
+            list-style-type: none;
+        }
+        .main-navbar ul li a {
+            text-decoration: none;
+            display: inline-block;
+            background: #fcde49ea;
+            color: red;
+            font-size: 14px;
+            height: 35px;
+            padding: .5px px 20px .5px 20px;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+            line-height: 38px;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav-menu2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .nav-item:hover {
+            background: rgba(196, 193, 193, 0.5);
+        }
+        .main-navbar ul i {
+            padding: 0 10px;
+        }
     }
 }
