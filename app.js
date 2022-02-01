@@ -6,10 +6,6 @@ app.listen(process.env.PORT || 3001, function() {
     console.log("Servidor corriendo")
 });
 
-app.get('/home', (req, res) => {
-    res.send("Levantando un servidor");
-});
-
 app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', (req, res) => {
@@ -22,4 +18,8 @@ app.get('/login', (req, res) => {
 
 app.get('/register', (req, res) => {
     res.sendFile(__dirname + '/views/register.html');
+});
+
+app.get('/home', (req, res) => {
+    res.send("Levantando un servidor");
 });
